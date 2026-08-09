@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+body{
+    font-family: "Afacad", sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x:hidden ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;   
+}
+nav{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+}
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 45px;
+    list-style-type: none;
+    margin-top: 30px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+nav > ul >li >a{
+    text-decoration: none;
+    color: white;
+}
+nav > div{
+    display: none;
+}
+nav >h1{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 65px;
+    leading-trim: NONE;
+    line-height: 133%;
+    letter-spacing: 0%;
+}
+nav >h3{
+    margin-top:20px ;
+    width: 192px;
+    height: 53.68720245361328px;
+    border-radius: 45.5px;
+    border-width: 0.91px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.33) 20.34%, rgba(255, 255, 255, 0.33) 114.41%);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 27.3px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 13px 50px;
+}
+.home{
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid white; */
+    margin-top: 50px;
+}
+.home > div {
+    display: flex;
+    justify-content: space-around;
+}
+.home > div > div:first-child{
+    width: 60%;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+.home > div  > div:first-child > h2{
+    font-weight: 600;
+    font-style: Regular;
+    font-size: 29px;
+    leading-trim: NONE;
+    line-height: 94%;
+    color: white;
+    letter-spacing: 0%;
+}
+.home > div  > div:first-child > h1{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 70px;
+    color: white;
+    width: 140%;
+    leading-trim: NONE;
+    margin-top: 20px;
+    line-height: 94%;
+    text-transform: uppercase;
+    letter-spacing: 0%;
+}
+.home > div  > div:first-child > p{
+    font-weight: 100;
+    font-style: Regular;
+    font-size: 25px;
+    leading-trim: NONE;
+    line-height: 130%;
+    margin-top: 20px;
+    width: 90%;
+    letter-spacing: -5%;
+    color:gray;
+}
+.home > div  > div:first-child > h3{
+  width: 115px;
+    height: 46px;
+    border-radius: 35px;
+    background: #3DD2D2;
+    font-weight: 400;
+    font-style: Regular;
+    margin-top: 20px;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 24px;
+    padding: 10px 15px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.home >div > div:last-child{
+    width: 40%;
+    margin-left: 200px;
+    /* background-color: white; */
+}
+.about {
+    width: 90%;
+    margin:80px auto;
+    /* border: 2px solid white; */
+}
+.about >h2{
+    /* text-align: center; */
+    margin: auto;
+    border-bottom: 2px dotted white;
+    width: 115px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 50px;
+    leading-trim: NONE;
+    line-height: 124%;
+    letter-spacing: 0%;
+}
+.about > div {
+    display: flex;
+}
+.about > div >div:first-child{
+    width: 40%;
+
+}
+.about > div >div:first-child > img{
+    display: block;
+}
+.about > div >div:first-child > img:first-child{
+    margin-left: 80px;
+}
+.about > div >div:first-child > img:nth-child(2){
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.about > div >div:first-child > img:last-child{
+    margin-top: 20px;
+    margin-left: 250px;
+}
+.about > div >div:last-child{
+    width: 60%;
+    padding: 60px;
+    position: relative;
+    margin-top: 70px;
+}
+.stroke-text {
+  font-size: 50px;
+  font-weight: 800;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.stroke-text span.space {
+  width: 15px;
+}
+.stroke-text span {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #ffffff;
+  display: inline-block;
+  opacity: 0;
+  animation: letterReveal 0.3s forwards,infinite, fillSolid 0.3s forwards,infinite;
+  animation-delay: calc(0.12s * var(--i)), calc(0.12s * var(--i) + 0.3s);
+}
+@keyframes letterReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fillSolid {
+  100% {
+    color: #ffffff;
+    -webkit-text-stroke: 0px transparent;
+  }
+}
+.about > div >div:last-child >p{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    line-height: 94%px;
+    letter-spacing: 0%;
+    color: gray;
+}
+.about > div >div:last-child > i:nth-child(2){
+    position: relative;
+    left: -35px;
+    top: 10px;
+    font-size: 30px;
+}
+.about > div >div:last-child > i:nth-child(4){
+    position: absolute;
+    right: 60px;
+    font-size: 30px;
+}
+.skills{
+    width: 90%;
+    margin: 80px auto;
+    /* border: 2px solid white; */
+}
+.skills >h1{
+    /* text-align: center; */
+    margin: auto;
+    border-bottom: 2px dotted white;
+    width: 95px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 50px;
+    leading-trim: NONE;
+    line-height: 124%;
+    letter-spacing: 0%;
+}
+.skills > div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 100px;
+}
+.skills > div > div{
+    /* padding:40px; */
+    border: 6px solid white;
+    margin-top: 30px;
+    padding-bottom: 25px;
+    border-radius: 30px;
+    position: relative;
+     height: 356px;
+    /* overflow: hidden; */
+}
+.skills > div > div > img{
+    width: 85.00000762939453px;
+    height: 96.47500610351562px;    
+    margin-left:120px;
+    margin-top: 70px;
+}
+.skills > div >div > h3{
+    width: 153px;
+    height: 44px;
+    border-radius: 25px;
+    border-width: 1px;
+    padding-right: 35px;
+    padding-top: 10px;
+    margin: 40px auto;
+    padding-left: 35px;
+    gap: 8px;
+    background-color: #3E4070;
+    border: 1px solid #FFFFFF;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.skills > div >div:nth-child(3) > h3{
+    width: 215px;
+}
+.skills > div >div:nth-child(4) > h3{
+    width: 195px;
+}
+.skills > div >div:nth-child(5) > h3{
+    width: 185px;
+}
+.skills > div >div:last-child > h3{
+    width: 235px;
+}
+.skills > div >div >div{
+    width: 48px;
+    background-color: #D9D9D947;
+    height: 44px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.skills > div >div >span{
+    position: relative;
+    left: -35px;
+    font-size: 130px;
+    margin-bottom: -140px;
+    top: -200px;
+    z-index: 1;
+    display: inline-block;
+    background-color: black;
+}
+.project{
+    width: 90%;
+    margin: 100px auto;
+    /* border: 2px solid white; */
+}
+.project >h1{
+    /* text-align: center; */
+    margin: auto;
+    border-bottom: 2px dotted white;
+    width: 140px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 50px;
+    leading-trim: NONE;
+    line-height: 124%;
+    letter-spacing: 0%;
+}
+.project > div {
+    display: flex;
+}
+.project > div  > div:first-child{
+    width: 35%;
+}
+.project > div  > div:last-child{
+    width: 65%;
+    padding: 60px 80px;
+}
+.project > div  > div:last-child > h2{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 31px;
+    letter-spacing: 2%;
+    vertical-align: middle;
+}
+.project > div  > div:last-child > p{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 31px;
+    letter-spacing: 2%;
+    vertical-align: middle;
+    color: gray;
+    margin-top: 10px;
+}
+.project > div  > div:last-child >a > button{
+    width: 160px;
+    height: 39px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 15px;
+    leading-trim: NONE;
+    /* line-height: 31px; */
+    letter-spacing: 2%;
+    margin-top: 30px;
+    /* vertical-align: middle; */
+}
+.education{
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid white; */
+}
+.education >h1{
+    /* text-align: center; */
+    margin: auto;
+    border-bottom: 2px dotted white;
+    width: 200px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 50px;
+    leading-trim: NONE;
+    line-height: 124%;
+    letter-spacing: 0%;
+}
+.education >div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.progress-circle {
+  width: 213px;
+  height: 213px;
+  border-radius: 50%;
+  background: conic-gradient(#ffffff 80%, transparent 0);
+  display: grid;
+  place-items:center;
+  position: relative;
+}
+.progress-circle::before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.progress-circle span {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 38px;
+}
+.education >div h2{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 40px;
+    leading-trim: NONE;
+    line-height: 94%;
+    letter-spacing: 0%;
+    margin-top: 30px;
+}
+.contact{
+    width: 80%;
+    margin: auto;
+}
+.contact >h1{
+    /* text-align: center; */
+    margin: auto;
+    margin-top: 100px;
+    border-bottom: 2px dotted white;
+    width: 160px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 50px;
+    leading-trim: NONE;
+    line-height: 124%;
+    letter-spacing: 0%;
+}
+.contact > div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+.contact > div > div{
+    width: 285px;
+height: 285px;
+background: linear-gradient(180deg, #000000 65.57%, #A0B22C 100%);
+border-radius: 50%;
+}
+.contact > div > div > div{
+    width: 207.3502960205078px;
+height: 207.3502960205078px;
+background: linear-gradient(179.8deg, #090909 42.21%, #687132 84.03%, #C7EF16 99.82%);
+border-radius: 50%;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 50px;
+padding: 75px;
+}
+.contact > div > div > div >i:first-child{
+    font-size: 50px;
+}
+@media(max-width:576.98px){
+nav{
+    display: flex;
+    /* width: 100%; */
+    /* justify-content: space-between; */
+}
+nav >h1{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 45px;
+    leading-trim: NONE;
+    line-height: 133%;
+    margin-left: -50px;
+    letter-spacing: 0%;
+}
+nav > div{
+    display: block;
+    margin-top: 20px;
+    margin-left:60px ;
+}
+nav > ul{
+    display: none;
+}
+nav >h3{
+    display: none;
+}
+.home > div{
+    display: block;
+}
+.home > div > div:first-child{
+    width: 100%;
+    margin: auto;
+}
+.home > div > div:first-child >h2{
+    font-size: 25px;
+    width:100% ;
+    /* text-align: center; */
+}
+.home > div > div:first-child >h1{
+    font-size: 35px;
+    width:100% ;
+    /* text-align: center; */
+}
+.home > div > div:first-child >p{
+    font-size: 25px;
+    width:100% ;
+    /* text-align: center; */
+}
+.home > div > div:first-child >h3{
+    font-size: 25px;
+    width:150px ;
+    margin: auto;
+    margin-top: 10px;
+}
+.home > div > div:last-child{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.home > div > div:last-child > img{
+    height: 300px;
+    width:300px;
+}
+.about > div{
+    display: block;
+}
+.about > div > div:first-child{
+    width:100% ;
+    margin-top: 30px;
+}
+.about > div > div:first-child > img:first-child{
+    height: 80px;
+    width: 80px;
+}
+.about > div > div:first-child > img:nth-child(2){
+    height: 230px;
+    width: 230px;
+}
+.about > div > div:first-child > img:last-child{
+    height: 80px;
+    width: 80px;
+}
+.about > div >div:last-child{
+    width: 100%;
+}
+.about > div >div:last-child > h1{
+    font-size: 36px;
+    /* text-align: center; */
+}
+.about > div >div:last-child > p{
+    font-size: 20px;
+    /* text-align: center; */
+    width: 100%;
+    /* margin: auto; */
+}
+.about > div >div:last-child > i:nth-child(2){
+  font-size: 15px;
+}
+.skills > div{
+    display: block;
+    width: 323px;
+    margin: auto;
+}
+.project > div {
+    display: block;
+}
+.project > div > div:first-child{
+    width: 90%;
+    /* border: 2px solid white; */
+    margin: auto;
+}
+.project > div > div:last-child{
+    width: 100%;
+}
+.project > div > div:first-child >img{
+    height: auto;
+    width: 100%;
+}
+.education > div {
+    display: block;
+}
+.progress-circle{
+    margin: auto;
+}
+.education > div > div >h2{
+    margin-bottom: 20px;
+}
+.contact > div{
+    display: block;
+}
+.contact > div >div{
+    width: 75%;
+    margin: auto;
+}
+}
